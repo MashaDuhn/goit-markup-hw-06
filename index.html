@@ -48,7 +48,7 @@
 			<section class="hero">
 				<div class="container">
 					<h1 class="hero-title">Effective Solutions for Your Business</h1>
-					<button type="button" data-modal-open class="btn">Order Service</button>
+					<button type="button" data-modal-open class="hero-btn">Order Service</button>
 				</div>
 			</section>
 			<!-- Section company aside -->
@@ -92,7 +92,7 @@
 						<li class="aside-item">
 							<div class="iside-content-images">
 								<svg class="iside-imges">
-									<use href="./images/symbol-defs.svg#icon-astronaut-aside" alt=""></use>
+									<use href="./images/symbol-defs.svg#icon-astronaut-aside" alt=""> </use>
 								</svg>
 							</div>
 							<h3 class="aside-subtitle">Technologies</h3>
@@ -331,9 +331,21 @@
 						</li>
 					</ul>
 				</div>
+				<form>
+					<label>
+						<span class="text-modal-footer">Subscribe</span>
+						 <div class="form-group">
+						<input type="text" class="footer-input" placeholder="E-mail"/>
+					</div>
+				</label>
+				<button>Subscribe</button>
+				</form>
+				
 			</div>
 		</footer>
-		<div class="backdrop" data-modal>
+
+		<!-- Modal -->
+		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<button type="button" data-modal-close class="modal-close">
 					<svg><use href="./images/symbol-defs.svg#icon-close"></use></svg>
@@ -376,21 +388,21 @@
 				<label class="form-label">
 					<span>Comment</span>
 					<textarea name="commentary" class="form-textarea" placeholder="Text input"> </textarea>
-					<!-- <input type="text" class="form-input" name="commentary" placeholder="Text input"/>  -->
 					<svg class="form-icon">
 						<use href="./images/symbol-defs.svg"></use>
 					</svg>
 				</label>
+			</div>
 				<div class="form-group">
-					<input type="checkbox" class="form-checkbox" id="policy" name="policy" checked />
+					<input type="checkbox" class="form-checkbox visually-hidden" id="policy" name="policy" checked />
 					<label for="policy" class="form-label-checkbox"> 
 						I accept the terms and conditions of the 
 						<span class="text-policy"> Privacy Policy </span> 
 					</label>
 				</div>
-					<button class="form-btn btn">Sent</button>
+					<button class="form-btn hero-btn">Sent</button>
 				</form type="text">
-			</div>
+			
 		</div>
 		<script src="./Js/modal.js"></script>
 	</body>
